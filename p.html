@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="pdt-container">
+            <div class="pdt-card" data-id="1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg" alt="ramen-img" class="pdt_img" width="180">
+                <h2 class="pdt_title">Japanese Ramen</h2>
+                <p class="pdt_price"> ₹150</p>
+            <div class="qty_container">
+        <div class="qty_button" onclick="updateQuantity('qty1',-1)">-</div>
+
+    <input type="text" id="qty1" class="qty-input" value="1" readonly>
+
+
+    <div class="qty_button" onclick="updateQuantity('qty1',+1)">+</div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+    <button class="add_to_cart_button" onclick="addToCart('1')">Add to Cart</button>
+            </div>
+
+
+
+
+
+
+
+            <div class="pdt-card" data-id="2">
+                <img src="menu2.jpg" alt="tandoori-img" class="pdt_img" width="180">
+                <h2 class="pdt_title">Chicken Tandoori</h2>
+                <p class="pdt_price"> ₹500</p>
+            <div class="qty_container">
+        <div class="qty_button" onclick="updateQuantity('qty2',-1)">-</div>
+
+    <input type="text" id="qty2" class="qty-input" value="1" readonly>
+
+
+    <div class="qty_button" onclick="updateQuantity('qty2',+1)">+</div>
+            </div>
+<button class="add_to_cart_button" onclick="addToCart('2')">Add to Cart</button>
+            </div>
+
+
+        
+            
+
+
+
+
+
+
+            <div class="pdt-card" data-id="3">
+                <img src="menu3.jpg" alt="mojito-img" class="pdt_img" width="180">
+                <h2 class="pdt_title"></h2>
+                <p class="pdt_price"></p>
+            <div class="qty_container">
+        <div class="qty_button" onclick="updateQuantity('qty3',-1)">-</div>
+
+    <input type="text" id="qty3" class="qty-input" value="1" readonly>
+
+
+    <div class="qty_button" onclick="updateQuantity('qty3',+1)">+</div>
+            </div>
+<button class="add_to_cart_button" onclick="addToCart('3')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <script src="p.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+ body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+    .container{
+        display: flex;
+        width: 100%;
+    }
+
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        align-items: baseline;
+        height: 100vh;
+        background-color: red;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 16px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .quantity-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .quantity-input {
+      width: 50px;
+      text-align: center;
+      margin: 0 10px;
+    }
+
+    .quantity-button {
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+
+    .product-title {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .product-price {
+      font-size: 1.5rem;
+      color: #27ae60;
+    }
+
+    .add-to-cart-button {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .add-to-cart-button:hover {
+      background-color: #2980b9;
+    }
+
+    #cart-container {
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 16px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 20%;
+      height: 100vh;
+    }
+
+    #cart {
+      list-style: none;
+      padding: 0;
+      height: 80%;
+      overflow-y: auto;
+    }
+
+    .cart-item {
+      display: flex;
+      flex-direction: column;
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .cart-item span {
+      margin-bottom: 5px;
+    }
+
+    .remove-item-button {
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .remove-item-button:hover {
+      background-color: #c0392b;
+    }
+
+    #total {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+ 

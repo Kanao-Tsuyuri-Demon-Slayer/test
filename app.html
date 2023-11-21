@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Product Cards with Cart</title>
+</head>
+<body>
+    <div class="container">
+        <div class="product-container">
+            <div class="product-card" data-id="1">
+              <img class="product-image" src="https://static.toiimg.com/thumb/54308405.cms?imgsize=510571&width=800&height=800" width="180" alt="Biryani Image">
+              <h2 class="product-title">Delicious Biryani</h2>
+              <p class="product-price">₹ 100</p>
+              <div class="quantity-container">
+                <div class="quantity-button" onclick="updateQuantity('quantity1', -1)">-</div>
+                <input type="text" id="quantity1" class="quantity-input" value="1" readonly>
+                <div class="quantity-button" onclick="updateQuantity('quantity1', 1)">+</div>
+              </div>
+              <button class="add-to-cart-button" onclick="addToCart('1')">Add to Cart</button>
+            </div>
+          
+            <div class="product-card" data-id="2">
+              <img class="product-image" src="https://www.licious.in/blog/wp-content/uploads/2022/04/shutterstock_1498639676-min.jpg" width="180" alt="Chili Chicken Image">
+              <h2 class="product-title">Spicy Chili Chicken</h2>
+              <p class="product-price">₹ 150</p>
+              <div class="quantity-container">
+                <div class="quantity-button" onclick="updateQuantity('quantity2', -1)">-</div>
+                <input type="text" id="quantity2" class="quantity-input" value="1" readonly>
+                <div class="quantity-button" onclick="updateQuantity('quantity2', 1)">+</div>
+              </div>
+              <button class="add-to-cart-button" onclick="addToCart('2')">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="3">
+                <img class="product-image" src="https://www.licious.in/blog/wp-content/uploads/2022/04/shutterstock_1498639676-min.jpg" width="180" alt="Chili Chicken Image">
+                <h2 class="product-title">Chawmin</h2>
+                <p class="product-price">₹ 250</p>
+                <div class="quantity-container">
+                  <div class="quantity-button" onclick="updateQuantity('quantity3', -1)">-</div>
+                  <input type="text" id="quantity3" class="quantity-input" value="1" readonly>
+                  <div class="quantity-button" onclick="updateQuantity('quantity3', 1)">+</div>
+                </div>
+                <button class="add-to-cart-button" onclick="addToCart('3')">Add to Cart</button>
+              </div>
+
+              <div class="product-card" data-id="4">
+                <img class="product-image" src="https://www.licious.in/blog/wp-content/uploads/2022/04/shutterstock_1498639676-min.jpg" width="180" alt="Chili Chicken Image">
+                <h2 class="product-title">Chicken Roll</h2>
+                <p class="product-price">₹ 350</p>
+                <div class="quantity-container">
+                  <div class="quantity-button" onclick="updateQuantity('quantity4', -1)">-</div>
+                  <input type="text" id="quantity4" class="quantity-input" value="1" readonly>
+                  <div class="quantity-button" onclick="updateQuantity('quantity4', 1)">+</div>
+                </div>
+                <button class="add-to-cart-button" onclick="addToCart('4')">Add to Cart</button>
+              </div>
+        </div>
+    
+        <div id="cart-container">
+            <h2>Shopping Cart</h2>
+            <ul id="cart"></ul>
+            <div id="total">Total: ₹ <span id="cart-total">0</span></div>
+        </div>
+    </div>
+    
+
+<script src="app.js"></script>
+
+</body>
+</html>
